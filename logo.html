@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<style type="text/css" media="screen">
+    body {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        background-color: #fff;
+    }
+
+    .logo {
+        --unit-size: 60px;
+        margin: auto;
+        overflow: hidden;
+        width: calc(var(--unit-size) * 8);
+        height: calc(var(--unit-size) * 8);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        line-height: calc(var(--unit-size) * 1.5);
+        font-size: var(--unit-size);
+        font-family: 'JetBrains Mono';
+        text-align: center;
+        background-color: #000;
+    }
+
+    .logo__line {
+        color: rgba(255, 255, 255, 0.3);
+        white-space: nowrap;
+    }
+
+    .logo__highlight {
+        color: #fff;
+    }
+</style>
+
+<div class="logo">
+    <div class="logo__line logo__line_pos_0">
+        abcdefghijklmnopqrstuvwxyabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+    </div>
+    <div class="logo__line logo__line_pos_1">
+        abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz<span class="logo__highlight">veged</span>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+    </div>
+    <div class="logo__line logo__line_pos_2">
+        !#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@<span class="logo__highlight">&amp;</span>!#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@
+    </div>
+    <div class="logo__line logo__line_pos_3">
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ<span class="logo__highlight">C0DE</span>ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+    </div>
+    <div class="logo__line logo__line_pos_4">
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+    </div>
+</div>
+
