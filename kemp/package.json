@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "watch-test": "nodemon -w * -e js -i node_modules test.js"
+    "watch-test": "nodemon -w '*' -e js -i node_modules test.js"
   },
   "author": "",
   "license": "ISC",
