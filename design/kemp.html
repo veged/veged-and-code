@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<style type="text/css" media="screen">
+    body {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        background-color: #fff;
+    }
+
+    .splash {
+        --unit-size: 70px;
+        margin: auto;
+        overflow: hidden;
+        width: 1280px;
+        height: 720px;
+        /* width: calc(var(--unit-size) * 8); */
+        /* height: calc(var(--unit-size) * 8); */
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        line-height: calc(var(--unit-size) * 1.5);
+        font-size: var(--unit-size);
+        font-family: 'JetBrains Mono';
+        text-align: center;
+        background-color: #000;
+    }
+
+    .splash__line {
+        color: rgba(255, 255, 255, 0.3);
+        white-space: nowrap;
+    }
+
+    .splash__highlight {
+        color: #fff;
+    }
+</style>
+
+<div class="splash">
+    <div class="splash__line splash__line_pos_0">
+        abcdefghijklmnopqrstuvwxyabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+    </div>
+    <div class="splash__line splash__line_pos_1">
+        абвгдеёжзийклмнопрстуфхцчшщъыьэюя<span class="splash__highlight">как это можно</span>абвгдеёжзийклмнопрстуфхцчшщъыьэюя
+    </div>
+    <div class="splash__line splash__line_pos_2">
+        !#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@<span class="splash__highlight">???</span>!#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@!#$%()*+,-./:;<=>?@[\]^{}@
+    </div>
+    <div class="splash__line splash__line_pos_3">
+        АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ<span class="splash__highlight">ПЕРЕПИСАТЬ</span>АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ
+    </div>
+    <div class="splash__line splash__line_pos_4">
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+    </div>
+    <div class="splash__line splash__line_pos_5">
+        abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz<span class="splash__highlight">getPercentageRounds, getTestIds</span>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+    </div>
+    <div class="splash__line splash__line_pos_6">
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+    </div>
+</div>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>org.sil.ukelele.keyboardlayout.vgd</string>
+	<key>CFBundleName</key>
+	<string>vgd</string>
+	<key>CFBundleVersion</key>
+	<string>0.2</string>
+	<key>KLInfo_Russian copy</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<true/>
+		<key>TISIconIsTemplate</key>
+		<false/>
+		<key>TISInputSourceID</key>
+		<string>org.sil.ukelele.keyboardlayout.vgd.russiancopy</string>
+		<key>TISIntendedLanguage</key>
+		<string>ru</string>
+	</dict>
+	<key>KLInfo_U.S. copy</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<true/>
+		<key>TISIconIsTemplate</key>
+		<false/>
+		<key>TISInputSourceID</key>
+		<string>org.sil.ukelele.keyboardlayout.vgd.u.s.copy</string>
+		<key>TISIntendedLanguage</key>
+		<string>en</string>
+	</dict>
+	<key>KLInfo_vgd Russian</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<true/>
+		<key>TISIconIsTemplate</key>
+		<false/>
+		<key>TISInputSourceID</key>
+		<string>org.sil.ukelele.keyboardlayout.vgd.vgdrussian</string>
+		<key>TISIntendedLanguage</key>
+		<string>ru</string>
+	</dict>
+	<key>KLInfo_vgd U.S.</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<true/>
+		<key>TISIconIsTemplate</key>
+		<false/>
+		<key>TISInputSourceID</key>
+		<string>org.sil.ukelele.keyboardlayout.vgd.vgdu.s.</string>
+		<key>TISIntendedLanguage</key>
+		<string>en</string>
+	</dict>
+</dict>
+</plist>

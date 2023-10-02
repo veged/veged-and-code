@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style type="text/css" media="screen">
+    body {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0;
+        margin: 10;
+        background-color: #fff;
+    }
+
+    .icon {
+        --unit-size: 8px;
+        width: var(--unit-size);
+        height: var(--unit-size);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon_size_8 {
+        --unit-size: 8px;
+    }
+
+    .icon_size_16 {
+        --unit-size: 16px;
+    }
+
+    .icon_size_32 {
+        --unit-size: 32px;
+    }
+
+    .icon_size_64 {
+        --unit-size: 64px;
+    }
+
+    .icon_text {
+        width: 100%;
+        font-size: calc(var(--unit-size) / 2.2);
+        line-height: calc(var(--unit-size));
+        font-family: 'JetBrains Mono';
+        text-align: center;
+        white-space: nowrap;
+        background-color: #2d2f33;
+        color: #fff;
+    }
+
+    .icon_lang_ru .icon_text {
+        background-color: #bf001a;
+    }
+
+</style>
+
+<div class="icon icon_lang_en icon_size_8"><div class="icon_text">vgd</div></div>
+<div class="icon icon_lang_ru icon_size_8"><div class="icon_text">вгд</div></div>
+
+<div class="icon icon_lang_en icon_size_16"><div class="icon_text">vgd</div></div>
+<div class="icon icon_lang_ru icon_size_16"><div class="icon_text">вгд</div></div>
+
+<div class="icon icon_lang_en icon_size_32"><div class="icon_text">vgd</div></div>
+<div class="icon icon_lang_ru icon_size_32"><div class="icon_text">вгд</div></div>
+
+<div class="icon icon_lang_en icon_size_64"><div class="icon_text">vgd</div></div>
+<div class="icon icon_lang_ru icon_size_64"><div class="icon_text">вгд</div></div>
