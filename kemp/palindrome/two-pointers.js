@@ -2,6 +2,7 @@ function isLetter(c) { return c.toLowerCase() !== c.toUpperCase() }
 function isEqual(a, b) { return a.toLowerCase() === b.toLowerCase() }
 
 export default function(str) {
+
   let left = 0,
     right = str.length - 1
 

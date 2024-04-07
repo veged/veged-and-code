@@ -1,7 +1,6 @@
 export default function(str) {
   let res = ''
-  for (const s of str.split(' ')) {
-    const [first, ...rest] = s // TODO
+  for (const [first, ...rest] of str.split(' ')) {
     res += `${res && ' '}${first.toUpperCase()}${rest.join('')}`
   }
   return res

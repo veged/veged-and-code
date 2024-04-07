@@ -18,7 +18,7 @@ export default function(str) {
       case leftChar !== rightChar:
         return false
     }
-  } while (++left < --right)
+  } while(++left < --right)
 
   return true;
 }
