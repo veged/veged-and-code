@@ -1,5 +1,5 @@
 export default function(arr) {
-  const uniqArr = [];
+  const uniqArr = []
 
   for (const i in arr) { // TODO in
     if (i == arr.lastIndexOf(arr[i])) {
@@ -7,6 +7,5 @@ export default function(arr) {
     }
   }
 
-  return uniqArr;
+  return uniqArr
 }
-
