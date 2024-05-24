@@ -5,4 +5,3 @@ export default function(num) {
   for (let i = 0; i < num;) res[i] ||= ++i // TODO: i++, while
   return res
 }
-

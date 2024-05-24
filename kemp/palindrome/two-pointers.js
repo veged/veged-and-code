@@ -12,19 +12,19 @@ export default function(str) {
 
     if (!isLetter(leftChar)) {
       left++
-      continue;
+      continue
     }
 
     if (!isLetter(rightChar)) {
       right--
-      continue;
+      continue
     }
 
-    if (!isEqual(leftChar, rightChar)) return false;
+    if (!isEqual(leftChar, rightChar)) return false
 
-    left++;
-    right--;
+    left++
+    right--
   }
 
-  return true;
+  return true
 }
