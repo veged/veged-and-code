@@ -6,21 +6,21 @@ export default function(str) {
   let left = 0,
     right = str.length - 1
 
-  while (left < right) {
+  while(left < right) {
     const leftChar = str[left],
       rightChar = str[right]
 
-    if (!isLetter(leftChar)) {
+    if(!isLetter(leftChar)) {
       left++
       continue
     }
 
-    if (!isLetter(rightChar)) {
+    if(!isLetter(rightChar)) {
       right--
       continue
     }
 
-    if (!isEqual(leftChar, rightChar)) return false
+    if(!isEqual(leftChar, rightChar)) return false
 
     left++
     right--

@@ -7,8 +7,8 @@ const tests = {
 }
 
 export default function(it, fibonacci) {
-  for (const i in tests)
-    it(`${i} → ${tests[i]}`, () => {
-      assert.deepEqual(fibonacci(+i), tests[i])
-    })
+  for(const i in tests)
+    it(
+      `${i} → ${tests[i]}`,
+      () => assert.deepEqual(fibonacci(+i), tests[i]))
 }

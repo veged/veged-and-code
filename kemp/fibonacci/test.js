@@ -9,7 +9,7 @@ const tests = {
 
 export default function(it, fibonacci) {
   for(const i in tests)
-    it(`${i} → ${tests[i]}`, () => {
-      assert.equal(fibonacci(+i), tests[i])
-    })
+    it(
+      `${i} → ${tests[i]}`,
+      () => assert.equal(fibonacci(+i), tests[i]))
 }

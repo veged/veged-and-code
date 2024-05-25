@@ -1,7 +1,7 @@
 export default function(n) {
   const result = []
-  for (let i = 1; i <= n; i++) {
-    switch (true) {
+  for(let i = 1; i <= n; i++) {
+    switch(true) {
       case i % 3 === 0 && i % 5 === 0:
         result.push('fizzbuzz')
         break

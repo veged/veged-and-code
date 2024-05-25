@@ -1,5 +1,5 @@
 export default function(str) {
-  if (!str) return true
+  if(!str) return true
 
   let left = 0,
     right = str.length - 1
@@ -8,7 +8,7 @@ export default function(str) {
     const leftChar = str[left].toLowerCase(),
       rightChar = str[right].toLowerCase()
 
-    switch (true) {
+    switch(true) {
       case leftChar === leftChar.toUpperCase():
         left++
         continue
@@ -18,7 +18,7 @@ export default function(str) {
       case leftChar !== rightChar:
         return false
     }
-  } while (++left < --right)
+  } while(++left < --right)
 
   return true
 }

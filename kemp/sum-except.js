@@ -1,4 +1,4 @@
-function sumExcept(a, i, n) {
+export default function sumExcept(a, i, n) {
   Number.isInteger(i) || (i = 0)
   Number.isInteger(n) || (n = 0)
 
