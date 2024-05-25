@@ -1,4 +1,4 @@
-export default function fizzBuzz(num) {
+export default function fizzbuzz(num) {
   const r = []
 
   for(let i1 = 1, i3 = 0, i5 = 0; i1 <= num; i1++) {

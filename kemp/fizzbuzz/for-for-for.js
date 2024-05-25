@@ -1,7 +1,7 @@
-export default function(num) {
+export default function fizzbuzz(num) {
   const res = Array(num).fill('')
   for(let i = 2; i < num; i += 3) res[i] += 'fizz'
   for(let i = 4; i < num; i += 5) res[i] += 'buzz'
-  for(let i = 0; i < num;) res[i] ||= ++i // TODO: i++, while
+  for(let i = 0; i < num;) res[i++] ||= i
   return res
 }

@@ -1,4 +1,4 @@
-export default function(n) {
+export default function fizzbuzz(n) {
   const result = []
   for(let i = 1; i <= n; i++) {
     if(i % 3 === 0 && i % 5 === 0) {

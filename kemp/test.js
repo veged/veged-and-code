@@ -13,16 +13,15 @@ const __dirname = fileURLToPath(path.dirname(import.meta.url)),
         Promise.all((await fs.readdir(dir)).map((filename) =>
           fs.stat(path.join(dir, filename)).then(({ mtime }) => ({ dir, filename, mtime }))
         )))
-  )
-  )
+  ))
     .flat()
     .filter(({ filename }) => filename !== 'test.js')
     .sort((a, b) => b.mtime.getTime() - a.mtime.getTime())[0]
 
 import(path.join(__dirname, module.dir, module.filename)).then(({ default: implementation }) => {
   import(path.join(__dirname, module.dir, 'test.js')).then(({ default: tests }) => {
-    describe(`→ ${module.dir} / ${module.filename}`, () => {
-      tests(it, implementation)
-    })
+    describe(
+      `→ ${module.dir} / ${module.filename}`,
+      () => tests(it, implementation))
   })
 })
