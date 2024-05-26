@@ -1,1 +1,1 @@
-export default function(a) { return [...new Set(a)] }
+export default function uniq(a) { return [...new Set(a)] }

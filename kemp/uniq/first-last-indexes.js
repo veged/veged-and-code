@@ -1,11 +1,9 @@
-export default function(arr) {
+export default function uniq(arr) {
   const uniqArr = []
 
-  for(const i in arr) { // TODO in
-    if(i == arr.lastIndexOf(arr[i])) {
+  for(const i in arr)
+    if(i == arr.lastIndexOf(arr[i]))
       uniqArr.push(arr[i])
-    }
-  }
 
   return uniqArr
 }

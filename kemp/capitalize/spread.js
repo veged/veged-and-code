@@ -1,7 +1,10 @@
-export default function(str) {
+export default function capitalize(str) {
   let res = ''
-  for(const [first, ...rest] of str.split(' ')) {
+
+  for(const s of str.split(' ')) {
+    const [first, ...rest] = s
     res += `${res && ' '}${first.toUpperCase()}${rest.join('')}`
   }
+
   return res
 }

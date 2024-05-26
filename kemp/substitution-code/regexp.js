@@ -1,12 +1,14 @@
 export default function decode(m, r) {
   if(!r.length) return m
 
-  r = r.reduceRight((a, r) => {
-    a[r.from] ??= r.to
-    return a
-  }, {})
+  r = r.reduceRight(
+    (a, r) => {
+      a[r.from] ??= r.to
+      return a
+    },
+    Object.create(null))
 
   return m.replace(
-    RegExp(Object.keys(r).join('|'), 'g'),
+    RegExp(Object.keys(r).join`|`, 'g'),
     s => r[s])
 }

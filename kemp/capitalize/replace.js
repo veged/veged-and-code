@@ -1,3 +1,3 @@
-export default function(str) {
-  return str.replace(/\b\w/g, (c) => c.toUpperCase())
+export default function capitalize(str) {
+  return str.replace(/\b\w/g, c => c.toUpperCase())
 }

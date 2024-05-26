@@ -8,12 +8,13 @@ const tests = [
   ['ab', [{ from: 'a', to: 'bar' }, { from: 'ab', to: 'foo' }], 'foo'],
   ['ab', [{ from: 'ab', to: 'foo' }, { from: 'a', to: 'bar' }], 'barb'],
   ['ab', [{ from: 'a', to: 'foo' }, { from: 'a', to: 'bar' }], 'barb'],
+  ['toString valueOf', [{ from: 'toString', to: 'foo' }, { from: 'valueOf', to: 'bar' }], 'foo bar'],
   ['ab', [], 'ab']
 ]
 
 export default function(it, decode) {
   for(const [m, r, a] of tests)
     it(
-      `${m} + ${r} → ${a}`,
+      `${m} + ${JSON.stringify(r)} → ${a}`,
       () => assert.deepEqual(decode(m, r), a))
 }
