@@ -1,13 +1,9 @@
-export default function(str) {
+export default function palindrome(str) {
   if(!str) return true
-
-  let left = 0,
-    right = str.length - 1
-
+  let left = 0, right = str.length - 1
   do {
     const leftChar = str[left].toLowerCase(),
       rightChar = str[right].toLowerCase()
-
     switch(true) {
       case leftChar === leftChar.toUpperCase():
         left++
@@ -19,6 +15,5 @@ export default function(str) {
         return false
     }
   } while(++left < --right)
-
   return true
 }

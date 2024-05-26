@@ -1,4 +1,4 @@
-export default function(n) {
+export default function fibonacci(n) {
   const arr = [0, 1]
 
   for(let i = 2; i <= n; i++)
