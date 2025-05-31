@@ -1,0 +1,122 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
+  "files": { "ignoreUnknown": false, "ignore": [] },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 160
+  },
+  "organizeImports": { "enabled": true },
+  "linter": {
+    "enabled": true,
+    "rules": { "recommended": false },
+    "ignore": ["node_modules", "dist", "**/*.d.ts"]
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded"
+    }
+  },
+  "overrides": [
+    {
+      "include": ["**/*.js"],
+      "javascript": { "globals": [] },
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedVariables": "error",
+            "useArrayLiterals": "error",
+            "noInvalidBuiltinInstantiation": "error"
+          },
+          "style": {
+            "noVar": "error",
+            "useBlockStatements": "warn",
+            "useCollapsedElseIf": "error",
+            "useForOf": "error",
+            "useConst": "error",
+            "useDefaultParameterLast": "error",
+            "useExponentiationOperator": "error",
+            "useTemplate": "error",
+            "useShorthandAssign": "error",
+            "noUselessElse": "error",
+            "useNumberNamespace": "error",
+            "useNodejsImportProtocol": "error",
+            "useThrowNewError": "error",
+            "useFilenamingConvention": "off"
+          },
+          "complexity": {
+            "noUselessTernary": "error",
+            "noForEach": "error"
+          },
+          "suspicious": {
+            "noAssignInExpressions": "off"
+          },
+          "nursery": {
+            "useAtIndex": "error",
+            "noDocumentCookie": "error",
+            "noSubstr": "error",
+            "useTrimStartEnd": "error",
+            "useCollapsedIf": "error",
+            "noOctalEscape": "error"
+          }
+        }
+      }
+    },
+    {
+      "include": ["**/*.ts", "**/*.tsx"],
+      "javascript": { "globals": [] },
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedVariables": "error",
+            "useArrayLiterals": "error",
+            "noInvalidBuiltinInstantiation": "error"
+          },
+          "style": {
+            "noNamespace": "error",
+            "noVar": "error",
+            "useAsConstAssertion": "error",
+            "useBlockStatements": "warn",
+            "useCollapsedElseIf": "error",
+            "useForOf": "error",
+            "useConst": "error",
+            "useDefaultParameterLast": "error",
+            "useExponentiationOperator": "error",
+            "useTemplate": "error",
+            "useShorthandAssign": "error",
+            "noUselessElse": "error",
+            "useNumberNamespace": "error",
+            "useNodejsImportProtocol": "error",
+            "useThrowNewError": "error",
+            "useFilenamingConvention": "off"
+          },
+          "complexity": {
+            "noUselessThisAlias": "error",
+            "noUselessTypeConstraint": "error",
+            "noUselessTernary": "error",
+            "noForEach": "error"
+          },
+          "suspicious": {
+            "noAssignInExpressions": "off",
+            "noExplicitAny": "error",
+            "noExtraNonNullAssertion": "error",
+            "noMisleadingInstantiator": "error",
+            "noUnsafeDeclarationMerging": "error",
+            "useNamespaceKeyword": "error"
+          },
+          "nursery": {
+            "useAtIndex": "error",
+            "noDocumentCookie": "error",
+            "noSubstr": "error",
+            "useTrimStartEnd": "error",
+            "useCollapsedIf": "error",
+            "noOctalEscape": "error"
+          }
+        }
+      }
+    }
+  ]
+}

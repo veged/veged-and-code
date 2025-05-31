@@ -4,12 +4,20 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "watch-test": "nodemon -w '*' -e js -i node_modules test.js"
+    "watch-test": "nodemon -w '*' -e js -i node_modules test.js",
+    "lint": "biome check",
+    "lint:fix": "biome check --fix --unsafe"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eslint": "^8.50.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.26.0",
+    "eslint-plugin-unicorn": "^59.0.0",
     "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
   }
 }
