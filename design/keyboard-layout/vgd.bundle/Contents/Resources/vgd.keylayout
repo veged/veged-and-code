@@ -1,8 +1,8 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 377 on 2024-01-20 at 18:28 (GMT+3)-->
-<!--Last edited by Ukelele version 396 on 2024-03-26 at 18:17 (GMT+3)-->
-<keyboard group="126" id="-7433" name="vgd" maxout="2">
+<!--Last edited by Ukelele version 417 on 2025-04-30 at 16:55 (GMT+3)-->
+<keyboard group="126" id="-11746" name="vgd" maxout="2">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
         <layout first="18" last="18" mapSet="JIS" modifiers="Modifiers"/>
@@ -697,18 +697,18 @@
             <key code="15" output=""/>
             <key code="16" output=""/>
             <key code="17" output=""/>
-            <key code="18" output=""/>
-            <key code="19" output=""/>
-            <key code="20" output=""/>
-            <key code="21" output=""/>
-            <key code="22" output=""/>
-            <key code="23" output=""/>
+            <key code="18" output="¹"/>
+            <key code="19" output="²"/>
+            <key code="20" output="³"/>
+            <key code="21" output="⁴"/>
+            <key code="22" output="⁶"/>
+            <key code="23" output="⁵"/>
             <key code="24" output="+"/>
-            <key code="25" output=""/>
-            <key code="26" output=""/>
+            <key code="25" output="⁹"/>
+            <key code="26" output="⁷"/>
             <key code="27" output="_"/>
-            <key code="28" output=""/>
-            <key code="29" output=""/>
+            <key code="28" output="⁸"/>
+            <key code="29" output="⁰"/>
             <key code="30" output=""/>
             <key code="31" output=""/>
             <key code="32" output=""/>
