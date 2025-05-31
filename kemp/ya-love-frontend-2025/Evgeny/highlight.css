@@ -1,0 +1,74 @@
+:root {
+  --violet: #B6A4FF;
+  --black: #000000;
+  --white: #FFFFFF;
+  --a: 112px;
+  --b: 96px;
+  --c: var(--b);
+  --d: 48px;
+  --e: 184px;
+  --f: 48px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  width: 512px;
+  height: 512px;
+  position: relative;
+}
+
+.circle {
+  background-color: var(--violet);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+
+.letter {
+  transform: skew(-20deg);
+  position: absolute;
+  top: calc((var(--d) + var(--e) + var(--f)) / 2 - 24px);
+  left: calc((var(--a) + var(--b) + var(--c)) / 2 + 3px);
+}
+
+.left {
+  position: absolute;
+  background-color: var(--black);
+  left: 0;
+  width: var(--a);
+  height: var(--e);
+  top: var(--d);
+}
+
+.top {
+  position: absolute;
+  background-color: var(--black);
+  top: 0;
+  width: var(--b);
+  height: var(--d);
+  left: var(--a);
+}
+
+.right {
+  position: absolute;
+  background-color: var(--black);
+  width: var(--b);
+  height: calc(var(--e) / 2 - 4px);
+  top: var(--d);
+  left: calc(var(--a) + var(--b));
+}
+
+.bottom {
+  position: absolute;
+  background-color: var(--black);
+  top: calc(var(--e) + var(--d));
+  left: var(--a);
+  width: calc(var(--b) + var(--b));;
+  height: var(--f);
+}

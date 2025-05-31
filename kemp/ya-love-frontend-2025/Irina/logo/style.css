@@ -1,0 +1,129 @@
+:root {
+    --violet: #B6A4FF;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+body {
+    width: 512px;
+    height: 512px;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(#B6A4FF 0%, #B6A4FF 71%, transparent 71%, transparent 100%)
+}
+
+.top {
+    background-color: #000;
+    width: 78px;
+    height: 48px;
+    position: absolute;
+    top: 116px;
+    left: 267px;
+}
+
+.top::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 48px;
+    left: -18px;
+    top: 0;
+    background-image: linear-gradient(-70deg, #000 0%, #000 50%, transparent 41%, transparent 100%);
+}
+
+.top::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 48px;
+    right: -18px;
+    top: 0;
+    background-image: linear-gradient(110deg, #000 0%, #000 50%, transparent 41%, transparent 100%);
+}
+
+.right {
+    background-color: #000;
+    width: 63px;
+    height: 88px;
+    position: absolute;
+    top: 164px;
+    left: 346px;
+}
+
+.right::before {
+    content: '';
+    position: absolute;
+    width: 33px;
+    height: 88px;
+    left: -33px;
+    top: 0;
+    background-image: linear-gradient(-70deg, #000 0%, #000 50%, transparent 41%, transparent 100%);
+}
+
+.right::after {
+    content: '';
+    position: absolute;
+    width: 33px;
+    height: 88px;
+    right: -33px;
+    top: 0;
+    background-image: linear-gradient(110deg, #000 0%, #000 50%, transparent 41%, transparent 100%);
+}
+
+.left {
+    background-color: #000;
+    width: 44px;
+    height: 184px;
+    position: absolute;
+    top: 164px;
+    left: 138px;
+}
+
+.left::before {
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 184px;
+    left: -68px;
+    top: 0;
+    background-image: linear-gradient(-70deg, #000 0%, #000 50%, transparent 41%, transparent 100%);
+}
+
+.left::after {
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 184px;
+    right: -68px;
+    top: 0;
+    background-image: linear-gradient(110deg, #000 0%, #000 50%, transparent 41%, transparent 100%);
+}
+
+.bottom {
+    background-color: #000;
+    width: 174px;
+    height: 48px;
+    position: absolute;
+    top: 348px;
+    left: 183px;
+}
+
+.bottom::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 48px;
+    left: -18px;
+    top: 0;
+    background-image: linear-gradient(-70deg, #000 0%, #000 50%, transparent 41%, transparent 100%);
+}
+
+.bottom::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 48px;
+    right: -18px;
+    top: 0;
+    background-image: linear-gradient(110deg, #000 0%, #000 50%, transparent 41%, transparent 100%);
+}
